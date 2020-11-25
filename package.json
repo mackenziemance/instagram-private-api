@@ -1,7 +1,7 @@
 {
   "name": "instagram-private-api",
   "description": "Instagram private API wrapper for full access to instagram",
-  "version": "1.43.3",
+  "version": "1.41.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -17,9 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dilame/instagram-private-api.git"
+    "url": "https://github.com/Antoxa1081/instagram-private-api.git"
   },
-  "homepage": "https://github.com/dilame/instagram-private-api",
+  "homepage": "https://github.com/Antoxa1081/instagram-private-api",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -27,6 +27,7 @@
     "typecheck": "tsc -p tsconfig.build.json --noEmit",
     "prepare": "npm run build",
     "test": "mocha --inline-diffs --timeout 1000000 tests/run.js",
+    "ts-node-test": "ts-node test.ts",
     "generate-interface": "ts-node ./tools/response-to-interface.ts",
     "generate-docs": "ts-node ./tools/docs-generator.ts"
   },
@@ -45,7 +46,7 @@
     "debug": "^4.1.1",
     "image-size": "^0.7.3",
     "json-bigint": "^0.3.0",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.5",
     "luxon": "^1.12.1",
     "reflect-metadata": "^0.1.13",
     "request": "^2.88.0",
@@ -55,7 +56,7 @@
     "tough-cookie": "^2.5.0",
     "ts-custom-error": "^2.2.2",
     "ts-xor": "^1.0.6",
-    "url-regex-safe": "^1.0.2",
+    "url-regex": "^5.0.0",
     "utility-types": "^3.10.0"
   },
   "devDependencies": {
@@ -71,10 +72,10 @@
     "prettier": "^1.19.1",
     "pretty-quick": "^1.10.0",
     "rimraf": "^2.6.3",
-    "ts-node": "^8.1.0",
+    "ts-node": "^8.10.1",
     "tslint": "^5.16.0",
     "typedoc": "^0.15.0",
     "typedoc-plugin-markdown": "^2.0.11",
-    "typescript": "^3.7.2"
+    "typescript": "^3.9.2"
   }
 }
